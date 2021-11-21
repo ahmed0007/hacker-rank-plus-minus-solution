@@ -53,7 +53,22 @@ function timeConversion(s) {
             return (hour + timeFormat);
         }
     }
-
+    
+    
+    // other solutions
+    // Write your code here
+    // Write your code here 11:11:11AM
+    /* const format = s.substring(s.length - 2);
+    let hour = s.substring(0, 2);
+    const minusSecond = s.substring(2, 8);
+    if (format == "AM") {
+        hour = hour == 12 ? '00' : hour;
+    }
+    if (format == "PM") {
+        hour = +hour + 12 < 24 ? +hour + 12 : '12';
+    }
+    return hour + "" + minusSecond;
+    */
 }
 
 function main() {
